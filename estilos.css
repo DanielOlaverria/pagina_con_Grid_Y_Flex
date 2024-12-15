@@ -82,10 +82,10 @@ main{
     border-radius: 10px;
     z-index: 10;
     transform: translate(0px, -40px);
-    transition: all 0.5s linear 0.2s;
+    transition: all 0.5s linear 0.3s;
 }
 
-#contenedorMenu:hover #subContenedorMenu{
+#contenedorMenu:hover #subContenedorMenu {
     display: flex;
     flex-direction: column;
     margin-top: -4px;
@@ -464,6 +464,34 @@ footer h4{
     margin-bottom: 30px;
 }
 
+#telefonoContacto{
+    width: 100%;
+    text-align: center;
+    margin: 25px auto;
+    background-image: repeating-linear-gradient(
+        90deg,
+        blue 10px,
+        rgb(125, 125, 253) 1px,
+        yellow 1px
+    );
+}
+
+#telefonoContacto p{
+    color: var(--colorTexto);
+    font-size: var(--tamañoTextoParrafo);
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 10px;
+    padding: 8px 0;
+    background-image: repeating-linear-gradient(
+        0deg,
+        rgb(192, 192, 247) 7px,
+      
+        rgb(255, 255, 196) 10px
+    );
+}
+
+
 /* Este es el CSS para el formulario*/
 
 .form-container {
@@ -531,6 +559,8 @@ footer h4{
 
 }
 
+/*Adaptacion para equipos con pantallas grandes...*/
+
 @media (min-width: 1025px){
     body{
         background-image: repeating-linear-gradient(
@@ -563,9 +593,13 @@ footer h4{
         max-width: 100%;
     }
     #logo{
-        margin-left: 50px;
+        
+        margin-left: 40px;
         padding: 0;
         margin-right: 35px;
+    }
+    #logo img{
+        width: 4rem;
     }
   
     #subContenedorMenuLogo{
@@ -576,10 +610,10 @@ footer h4{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 20px;
+        width: 500px;
         background-color: rgba(238, 186, 119, 0.603);
         padding: 12px 20px;
-        transform: translate(150px, -45px);
+        transform: translate(50px, -45px);
         transition: all 0.6s linear 0.3s;
     }
    
@@ -588,7 +622,7 @@ footer h4{
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        transform: translate(50px, 0px);
+        transform: translate(50px, -10px);
         width: 600px;
         background-color: rgb(252, 149, 14);
     }

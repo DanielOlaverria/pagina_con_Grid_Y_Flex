@@ -28,7 +28,7 @@
 
             <div class="form-container">
                 <h2>Formulario de Contacto</h2>
-                <form id="contactForm" onsubmit="return validateForm()">
+                <form id="contactForm" onsubmit="return validateForm()" method="get">
                     <div>
                         <label for="nombre">Nombre y Apellido:</label>
                         <input type="text" id="nombre" name="nombre" required>
@@ -44,7 +44,7 @@
                     </div>
                     <div>
                         <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        <textarea id="mensaje" name="mensaje" rows="4" required maxlength="200"></textarea>
                     </div>
                     <div>
                         <label for="telefono">Número de Teléfono:</label>
@@ -55,7 +55,11 @@
                         <button type="button" class="btn-clear" onclick="clearForm()">Limpiar</button>
                     </div>
                 </form>
+                
             </div>
+            <span id="telefonoContacto">
+                <p>Llamanos al: 809<b>-534-</b>0199</p>
+            </span>
     </section>
     
     <script src="/codigo.js"></script>
